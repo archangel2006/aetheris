@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Background audio player — loads /music-track.mp3 from the public directory
+ * Background audio player — loads /music-track-v2.mp3 from the public directory
  * and automatically plays on a continuous loop throughout the application.
  */
 export default function AmbientMusic() {
@@ -10,7 +10,7 @@ export default function AmbientMusic() {
   const isPlayingRef = useRef(false);
 
   useEffect(() => {
-    const audio = new Audio("/music-track.mp3");
+    const audio = new Audio("/music-track-v2.mp3");
     audio.loop = true;
     audio.volume = 0.5;
     audioRef.current = audio;
